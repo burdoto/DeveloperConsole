@@ -16,7 +16,7 @@ namespace BepInEx
 
         private bool showingUI = false;
         private static string TotalLog = "";
-        private Rect UI = new Rect(20, 20, 900, 700);
+        private Rect UI = new Rect(900, 0, 900, 500);
         private static Vector2 scrollPosition = Vector2.zero;
         private GUIStyle logTextStyle = new GUIStyle();
 
