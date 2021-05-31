@@ -16,7 +16,7 @@ namespace BepInEx
 
         private bool showingUI = false;
         private static string TotalLog = "";
-        private Rect UI = new Rect(20, 20, 400, 400);
+        private Rect UI = new Rect(20, 20, 900, 700);
         private static Vector2 scrollPosition = Vector2.zero;
         private GUIStyle logTextStyle = new GUIStyle();
 
@@ -38,6 +38,8 @@ namespace BepInEx
             
             Logging.Logger.Listeners.Add(new LogListener());
             Logger = base.Logger;
+
+            Logger.LogInfo("Hello World");
         }
 
         private static void OnEntryLogged(LogEventArgs logEventArgs)
