@@ -38,8 +38,6 @@ namespace BepInEx
             
             Logging.Logger.Listeners.Add(new LogListener());
             Logger = base.Logger;
-
-            Logger.LogInfo("Hello World");
         }
 
         private static void OnEntryLogged(LogEventArgs logEventArgs)
